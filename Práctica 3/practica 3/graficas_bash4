@@ -1,0 +1,16 @@
+#!/bin/bash
+
+#Tiempos de llegada del flujo TCP(destino)
+gnuplot -e "set title 'Tiempos de llegada del flujo TCP(destino)';set xlabel 'Tiempos';set logscale x;set ylabel 'distribucion';plot 'tiempos_llegada_flujo_TCP_destino_ecdf.txt' using 1:2 with steps title 'Datos';set term pngcairo;set output 'GNUplot_tiempos_llegada_flujo_TCP_destino_ecdf.txt.png';replot;set output"
+
+#Tiempos de llegada del flujo TCP(origen)
+gnuplot -e "set title 'Tiempos de llegada del flujo TCP(origen)';set xlabel 'Tiempos';set logscale x;set ylabel 'distribucion';plot 'tiempos_llegada_flujo_TCP_origen_ecdf.txt' using 1:2 with steps title 'Datos';set term pngcairo;set output 'GNUplot_tiempos_llegada_flujo_TCP_origen_ecdf.txt.png';replot;set output"
+
+#Tiempos de llegada del flujo UDP(destino)
+gnuplot -e "set title 'Tiempos de llegada del flujo UDP(destino)';set xlabel 'Tiempos';set logscale x;set ylabel 'distribucion';plot 'tiempos_llegada_flujo_UDP_destino_ecdf.txt' using 1:2 with steps title 'Datos';set term pngcairo;set output 'GNUplot_tiempos_llegada_flujo_UDP_destino_ecdf.txt.png';replot;set output"
+
+#Ancha de banda de destino
+gnuplot -e "set title 'Ancho banda destino';set xlabel 'Tiempo';set ylabel 'bits';plot 'ancho_banda_destino.txt' using 1:2 with lines title 'Datos';set term pngcairo;set output 'GNUplot_ancho_banda_destino.txt.png';replot;set output"
+
+#Ancha de banda de origen
+gnuplot -e "set title 'Ancho banda origen';set xlabel 'Tiempo';set ylabel 'bits';plot 'ancho_banda_origen.txt' using 1:2 with lines title 'Datos';set term pngcairo;set output 'GNUplot_ancho_banda_origen.txt.png';replot;set output"

@@ -1,0 +1,25 @@
+Marta García Marín
+Lucía Colmenarejo Pérez
+
+bash1.sh
+Ejercicio 1: Porcentaje de paquetes IP  y no IP
+
+bash2.sh
+Ejercicio 2: Top 10 direcciones IP y puertos
+
+bash3.sh
+Ejercicio 3, 4 y 5
+Ejercicio 3: ECDF tamaños a nivel 2.
+Ejercicio 4: ECDF tamaños a nivel 3 HTTP.
+Ejercicio 5: ECDF tamaños a nivel 3 DNS.
+Creacion de ficheros
+
+bash4.h
+Ejercicio 6, 7 y 8
+Ejercicio 6: ECDF de los tiempos entre llegadas del flujo TCP.
+Ejercicio 7: ECDF de los tiempos entre llegadas del flujo UDP.
+Ejercicio 8: Cuadal de ancho banda a nivel 2 en bits por segundo de destino.
+Creacion de ficheros
+
+bash_gnuplot.sh
+Gráficas gnuplot
